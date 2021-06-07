@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<article>
+	<header class="container"> 
+		<div class="logo">
+			<img src="res/Logo/logowhite.png" alt="hungry logo" height=45% width=45%>
+		</div>
+		<div class="name">
+			<h1> LOGIN PILOT </h1>
+		</div>
+	</header>
+
+
+	<div class="center">
+		<div class="box">
+			<div class="login-prompt box-content">
+				<p> Email: </p>
+				<input id = emailInfo>
+				<p> Password: </p>
+				<input id = passwordInfo type = "password">
+				<p class="aside"><a href="res/forgotpassword.html"> Forgot password? </a></p>
+				<a href="res/home.html"><button onclick = "return checkInput()">Login</button></a>
+				<a href="res/accountinfo.html"><button>Signup</button></a>
+				<a href="res/home.html" class="wide"><button>Guest</button></a>
+			</div>
+		</div>
+	</div>
+
+	<footer class="container">
+		<div class="copyright">COMP3020, <b>Group 45</b> © 2020</div> 
+		<nav>
+			<ul>
+				<li><a href="res/privacypolicy.html">Privacy Policy</a></li>
+				<li><a href="res/terms.html">Terms and Conditions</a></li>
+				<li><a href="res/contact.html">Contact us</a></li>
+			</ul>
+		</nav>
+	</footer>
+</article>
+{% endblock %}

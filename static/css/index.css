@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+
+:root{
+    --base:whitesmoke;
+    --text:darkslategrey;
+    --accent: crimson;
+}
+
+html,body{
+    color: var(--text);
+    background-color: var(--base);
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    display: grid;
+    height: 100%;
+    width: 100%;
+	
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	
+	overflow: auto;
+}
+
+article{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    color: var(--base);
+    background-color: var(--accent);
+    font-weight: 700;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr;
+    grid-gap: 2%;
+    justify-items: center;
+    align-items:center;
+}
+
+#grid-left{
+    justify-self:start;
+    margin-left: 3%;
+}
+#accountBar{
+    color:var(--base);
+    background-color: var(--text);
+    font-size: large;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-self: end;
+    cursor: pointer;
+}
+
+.accountBar{
+    color:var(--base);
+    background-color: var(--text);
+    font-size: large;
+    position:relative;
+    padding:5% 15%;
+    margin-left: auto;
+    justify-self: end;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dropdownContent{
+    display: none;
+    position: absolute;
+    margin-top: 10%;
+    right:0.1%;
+    left:0.1%;
+    padding-left: 8%;
+    font-size: medium;
+    text-align: left;
+}
+
+.dropdownContent .material-icons{
+    float:right;
+}
+
+.dropdownContent button{
+    float:right;
+}
+
+.accountBar:hover{
+    background-color: #1a2125;
+    transition: 0.1s;
+}
+
+.accountBar:hover .dropdownContent{
+    border: 2px solid #1a2125;
+    background-color:var(--text);
+    display:block;
+    text-align: match-parent;
+}
+
+
+.center{
+    background-image: url('Food/login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: larger;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+    /*padding-bottom: 15%;*/
+}
+
+.box{
+    background-color: white;
+    border-color: var(--text);
+    border-style: solid;
+    margin: 4%;
+    width: 30%;
+}
+
+.box-content{
+    margin:7%;
+}
+
+.promotion{
+    padding-top: 1%;
+    color:whitesmoke;
+    background-color: firebrick;
+    text-align: center;
+}
+
+.login-prompt{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% auto 1fr;
+}
+
+#send-instr{
+    grid-column: 2/3;
+}
+
+.prompt{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+input{
+    height:40%;
+    background-color: aliceblue;
+}
+
+.aside{
+    grid-column: 1/3;
+    justify-self: end;
+    font-size: medium;
+}
+
+.aside a{
+    color: mediumblue;
+}
+
+.aside a:hover{
+    color: cornflowerblue;
+}
+
+button{
+    color: var(--base);
+    background-color: var(--accent);
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    border-color: var(--accent);
+    border-radius: 1em;
+    margin: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+	width: 90%;
+}
+
+button a{
+    color: var(--base);
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: firebrick;
+    transition: 0.3s;
+    cursor:pointer
+}
+
+.set-btn {
+	width: 20.5%;
+}
+
+.wide{
+    grid-column: 1/3;
+	width: 104%;
+}
+
+.content{
+    display:grid;
+    grid-template-columns: 1fr 33% 1fr;
+
+}
+
+a{
+    color:lightskyblue;
+    text-decoration: none;
+}
+
+a:hover{
+    color:lightcyan;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr;
+    grid-gap: 2%;
+    justify-items: center;
+    align-items:center;
+}
+
+footer{
+    color:var(--base);
+    background-color: var(--text);
+    padding-bottom: 1%;
+}
+
+.copyright {
+	margin-top: 2.5%; 
+	justify-self: left; 
+	margin-left: 2%;
+}
+
+ul{
+    width: 120%;
+    list-style: none;
+}
+
+li{
+    float:left;
+    margin-left: 5%;
+}
